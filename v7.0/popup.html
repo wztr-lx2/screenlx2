@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Screen Ix²</title>
+  <link rel="stylesheet" href="css/overlay.css" />
+</head>
+<body class="light">
+  <div id="header">
+    <label for="toggleExtension" class="switch">
+      <input type="checkbox" id="toggleExtension" checked />
+      <span class="slider round"></span>
+    </label>
+    <h3>Screen Ix²</h3>
+    <button id="settingsBtn" title="Settings">⚙️</button>
+  </div>
+
+  <label for="brightness">Brightness <small id="brightVal">100</small></label>
+  <input type="range" id="brightness" min="0" max="200" value="100" />
+
+  <label for="contrast">Contrast <small id="contrastVal">100</small></label>
+  <input type="range" id="contrast" min="0" max="200" value="100" />
+
+  <label for="saturation">Saturation <small id="satVal">100</small></label>
+  <input type="range" id="saturation" min="0" max="200" value="100" />
+
+  <label for="grayscale">Grayscale <small id="grayVal">0</small></label>
+  <input type="range" id="grayscale" min="0" max="100" value="0" />
+
+  <label for="sepia">Sepia <small id="sepiaVal">0</small></label>
+  <input type="range" id="sepia" min="0" max="100" value="0" />
+
+  
+<div class="slider-button-row">
+  <button id="saveSlidersBtn">Save sliders</button>
+  <button id="resetSlidersBtn">Reset sliders</button>
+</div>
+
+
+  <button id="fontMenuToggle">Font size ▼</button>
+  <div id="fontMenu" hidden>
+    <label for="fontsize">Size (%) <small id="fontSizeVal">100</small></label>
+    <input type="range" id="fontsize" min="50" max="200" value="100" />
+  </div>
+
+  <div id="settingsMenu" hidden>
+    <div class="theme-row">
+      <label for="themeSel">Theme</label>
+      <select id="themeSel">
+        <option value="light">Mose’rød</option>
+        <option value="aleksandra">Aleksandra ❤️</option>
+      </select>
+      <button id="closeSettings" class="close-btn" title="Close">✖</button>
+    </div>
+
+    <div class="toggle-container">
+      <div class="toggle-item">
+        <label class="switch">
+          <input type="checkbox" id="darkToggle" />
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Dark mode</span>
+      </div>
+      <div class="toggle-item">
+        <label class="switch">
+          <input type="checkbox" id="toggleDisplaySwitch" checked />
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Show On/Off switch</span>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <button id="saveBtn">Save</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <script src="js/popup.js"></script>
+</body>
+</html>

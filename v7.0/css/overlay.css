@@ -1,0 +1,239 @@
+/* overlay.css */
+/* Core variables */
+:root {
+  --bg: #fff;
+  --fg: #000;
+  --accent: #8b2e31;
+}
+
+/* Base styles */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background: var(--bg);
+  color: var(--fg);
+  min-width: 280px;
+  padding: 12px;
+}
+
+/* Themes */
+body.light {
+  --bg: #fff;
+  --fg: #000;
+  --accent: #8b2e31;
+}
+body.aleksandra {
+  --bg: #ffe6ff;
+  --fg: #301040;
+  --accent: #a64ac9;
+}
+body.darkmode {
+  --bg: #000;
+  --fg: #fff;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Sliders & inputs */
+input[type="range"] {
+  width: 100%;
+  margin: 4px 0 12px;
+  height: 6px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 3px;
+  accent-color: var(--accent);
+}
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+/* Labels & small text */
+small {
+  font-size: 11px;
+  float: right;
+  color: rgba(0,0,0,0.6);
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 8px 0;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Settings menu */
+#settingsMenu {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  width: 240px;
+  padding: 15px;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+#settingsMenu .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#settingsMenu label[for="themeSel"] {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+#settingsMenu select#themeSel {
+  width: calc(100% - 40px);
+  margin-bottom: 12px;
+}
+.toggle-container {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+.toggle-item { display: flex; gap: 8px; align-items: center; }
+
+/* Buttons side-by-side */
+#settingsMenu #saveBtn,
+#settingsMenu #resetBtn {
+  float: left;
+  width: calc(50% - 8px);
+  margin: 6px 4px 0;
+}
+#settingsMenu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+#fontMenuToggle {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 8px 0;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#fontMenu {
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+
+.slider-button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.slider-button-row button {
+  flex: 1;
+  padding: 8px 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider.round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 22px;
+}
+
+.slider.round:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider.round {
+  background-color: var(--accent);
+}
+
+.switch input:checked + .slider.round:before {
+  transform: translateX(18px);
+}
+
+
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  filter: grayscale(0.5);
+}
