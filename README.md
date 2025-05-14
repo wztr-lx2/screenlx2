@@ -28,7 +28,7 @@ Screen Ix² lets you adjust brightness, contrast, saturation, grayscale, sepia, 
 
 ## 🚀 **Installation**
 
-1. Download the [latest ZIP package](https://your-link-here.com).
+1. Download the (https://github.com/wztr-lx2/screenlx2/).
 2. Unzip the folder.
 3. Go to `chrome://extensions/` in your Chrome browser.
 4. Enable **Developer Mode** (top right).
@@ -63,7 +63,7 @@ Screen Ix² was built with user empowerment in mind:
 
 ## 📝 **Credits**
 
-- UI, code, and concept: [Your Name or Organization]
+- UI, code, and concept: wztr
 - Special thanks to contributors and testers
 
 ---
@@ -71,7 +71,7 @@ Screen Ix² was built with user empowerment in mind:
 ## 📬 **Feedback / Issues**
 
 Found a bug? Want a new feature?  
-Open an issue, or contact us at [your email/website].
+Open an issue, or contact us at screenlx2@gmail.com.
 
 ---
 
@@ -108,7 +108,7 @@ Screen Ix² lar deg justere lysstyrke, kontrast, metning, gråtoner, sepia, skri
 
 ## 🚀 **Installasjon**
 
-1. Last ned [Screenlx2_Beta_v1](https://l2p.no).
+1. Last ned (https://github.com/wztr-lx2/screenlx2).
 2. Pakk ut mappen.
 3. Gå til `chrome://extensions/` i Chrome.
 4. Aktiver **Utviklermodus** (øverst til høyre).
@@ -143,7 +143,7 @@ Screen Ix² er laget for brukerens frihet:
 
 ## 📝 **Kreditering**
 
-- UI, kode og idé: [Ditt navn eller organisasjon]
+- UI, kode og idé: wztr
 - Spesiell takk til bidragsytere og testere
 
 ---
@@ -151,7 +151,7 @@ Screen Ix² er laget for brukerens frihet:
 ## 📬 **Tilbakemeldinger / Problemer**
 
 Funnet en feil? Ønsker du ny funksjon?  
-Åpne en sak, eller kontakt oss på [din epost/nettside].
+Åpne en sak, eller kontakt oss på screenlx2@gmail.com.
 
 ---
 
